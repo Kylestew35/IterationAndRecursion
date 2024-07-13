@@ -11,42 +11,15 @@ def factor_r(x):
     else:
         return x * factor_r(x - 1)
 
+value = [0, 5, 10, 25, 50, 100]
+
 print("Factorial results using an iterative function")
-u = 0
-result = factor_i(u)
-print(f"{u}! = {result}")
-u = 5
-result = factor_i(u)
-print(f"{u}! = {result}")
-u = 10
-result = factor_i(u)
-print(f"{u}! = {result}")
-u = 25
-result = factor_i(u)
-print(f"{u}! = {result}")
-u = 50
-result = factor_i(u)
-print(f"{u}! = {result}")
-u = 100
-result = factor_i(u)
-print(f"{u}! = {result}")
+for u in value:
+    result = factor_i(u)
+    print(f"{u}! = {result}")
+
 
 print("Factorial results using an recursive function")
-u = 0
-result = factor_r(u)
-print(f"{u}! = {result}")
-u = 5
-result = factor_r(u)
-print(f"{u}! = {result}")
-u = 10
-result = factor_r(u)
-print(f"{u}! = {result}")
-u = 25
-result = factor_r(u)
-print(f"{u}! = {result}")
-u = 50
-result = factor_r(u)
-print(f"{u}! = {result}")
-u = 100
-result = factor_r(u)
-print(f"{u}! = {result}")
+for u in value:
+    result = factor_r(u)
+    print(f"{u}! = {result}")
